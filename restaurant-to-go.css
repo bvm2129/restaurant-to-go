@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#navItem1,
+#navItem2,
+#navItem3,
+#navItem4 {
+    color: #323f4b;
+}
+
+.logo {
+    height: 80px;
+}
+
+.banner-section-bg-contaoner {
+    background-image: url("images/banner_bg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-section-content {
+    color: white;
+    align-items: center;
+}
+
+.banner-section-heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner-section-caption {
+    font-size: 24px;
+    color: #f5f7fa;
+}
+
+.custom-button {
+    height: 45px;
+    width: 130px;
+    color: white;
+    border-radius: 8px;
+    /* background-color: #d0b200; */
+    border-width: 0px;
+    margin-right: 10px;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    transition: all 0.2s ease-in 0s;
+}
+
+.custom-button:hover {
+    height: 50px;
+    width: 140px;
+}
+
+.outline-button {
+    height: 45px;
+    width: 130px;
+    color: white;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #d0b200;
+    border-width: 2px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in 0s;
+}
+
+.outline-button:hover {
+    height: 50px;
+    width: 140px;
+}
+
+.wcu-section,
+.healthy-food {
+    background-color: #f9fbfe;
+
+}
+
+.thankyou-section {
+    scroll-margin-top: 80px;
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.wcu-section-heading,
+.em-section-heading,
+.healthy-heading,
+.dap-heading,
+.thankyou-heading,
+.follow-heading {
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #183b56;
+    font-size: 28px;
+}
+
+.wcu-section-para,
+.thankyou-para,
+.dap-para,
+.healthy-para {
+    font-size: 16px;
+    color: #5a7184;
+}
+
+.wcu-card {
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e5eaf4;
+    height: 100%;
+}
+
+.wcu-card:hover {
+    box-shadow: 0px 0px 10px 10px #e5eaf4;
+    cursor: pointer;
+}
+
+.wcu-card-heading {
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #323f4b;
+    font-size: 28px;
+}
+
+.wcu-card-para {
+    color: #7b8794;
+}
+
+.wcu-card-image {
+    height: 90px;
+    width: 87px;
+}
+
+.offer {
+    font-weight: 600;
+    font-style: italic;
+    color: #323f4b;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+    /box-shadow: 0px 0px 10px 10px lightgrey;
+    padding: 15px;
+    transition: all 0.2s ease-in 0s;
+    margin: 20px;
+}
+
+.menu-item-card:hover {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu-image,
+.healthy-image {
+    border-radius: 16px;
+    width: 90%;
+}
+
+.button-over {
+    color: white;
+}
+
+.button-over:hover {
+    color: white;
+}
+
+.dap-image {
+    transition: all 0.5s ease-out 0.2s;
+}
+
+.dap-image:hover {
+    transform: rotate(1turn);
+    width: 100%;
+}
+
+.menu-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #323f4b;
+}
+
+.menu-item-link {
+    color: #d0b200;
+}
+
+.payment-image {
+    height: 60px;
+    margin-right: 25px;
+}
+
+.thankyou-image {
+    height: 350px;
+    margin: 20px;
+}
+
+.icon-container {
+    color: #d0b200;
+    background-color: #d0b2001a;
+    font-size: 30px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.icon-container:hover {
+    box-shadow: 0px 0px 5px 2px;
+}
+
+.thanks-gift {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+/* #navbar-hide {
+    transform: translate(0px, -100px);
+    transition: transform 0.3s ease-in-out;
+}
+#navbar-hide:hover {
+    transform: translate(0px, 0px);
+} */
+
+.footer {
+    background-color: #202b36;
+    color: #959ead;
+    text-align: center;
+}
+
+/* Gift Voucher CSS */
+.gift-voucher-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 2px solid #d0b200;
+}
+
+.gift-voucher-card::before, .gift-voucher-card::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gift-voucher-card::before { left: -10px; }
+.gift-voucher-card::after { right: -10px; }
+
+.voucher-tag {
+    background-color: #d0b200;
+    color: #1e293b;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.voucher-title {
+    font-family: "Bree Serif", serif;
+    font-size: 24px;
+    color: #f8fafc;
+}
+
+.voucher-desc {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.voucher-discount {
+    font-size: 42px;
+    font-weight: 900;
+    color: #d0b200;
+    margin: 10px 0;
+    text-shadow: 0 2px 10px rgba(208, 178, 0, 0.3);
+}
+
+.voucher-sub {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.voucher-code-box {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px dashed rgba(208, 178, 0, 0.5);
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.voucher-code-label {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-right: 5px;
+}
+
+.voucher-code {
+    font-size: 18px;
+    color: #d0b200;
+    letter-spacing: 1.5px;
+}
+
+.voucher-footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 12px;
+    color: #475569;
+}
