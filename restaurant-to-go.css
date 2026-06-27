@@ -146,7 +146,7 @@ body {
 
 .menu-item-card {
     border-radius: 16px;
-    /box-shadow: 0px 0px 10px 10px lightgrey;
+    box-shadow: 0px 0px 10px 10px lightgrey;
     padding: 15px;
     transition: all 0.2s ease-in 0s;
     margin: 20px;
@@ -159,7 +159,7 @@ body {
 
 .menu-image {
     border-radius: 16px;
-    width: 100%;
+    width: 100px;
     height: 200px;
     object-fit: cover;
 }
@@ -186,7 +186,6 @@ body {
 
 .dap-image:hover {
     transform: rotate(1turn);
-    width: 100%;
 }
 
 .menu-item-name {
@@ -253,11 +252,12 @@ body {
     border-radius: 12px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     border: 2px solid #d0b200;
 }
 
-.gift-voucher-card::before, .gift-voucher-card::after {
+.gift-voucher-card::before,
+.gift-voucher-card::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -267,8 +267,14 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.gift-voucher-card::before { left: -10px; }
-.gift-voucher-card::after { right: -10px; }
+
+.gift-voucher-card::before {
+    left: -10px;
+}
+
+.gift-voucher-card::after {
+    right: -10px;
+}
 
 .voucher-tag {
     background-color: #d0b200;
@@ -306,7 +312,7 @@ body {
 }
 
 .voucher-code-box {
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border: 1px dashed rgba(208, 178, 0, 0.5);
     padding: 10px;
     border-radius: 6px;
@@ -326,7 +332,17 @@ body {
 }
 
 .voucher-footer {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 12px;
     color: #475569;
+}
+
+@media (max-width: 767px) {
+    .healthy-image {
+        height: 250px;
+    }
+
+    .thankyou-image {
+        height: 220px;
+    }
 }
